@@ -1,0 +1,86 @@
+body
+
+{
+    
+      background-image: url(../learn.html-css/img/vestrahorn-mountains-stokksnes-iceland\(2\).jpg);
+      margin: 0 auto;
+      height: 100vh;
+      align-items: center;    
+      font-family: Arial, sans-serif;
+}
+
+
+
+.container{
+    
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; 
+    border-radius: 20px;
+    background-color: rgba(8, 82, 57, 0.603);
+    padding: 30px;
+    box-shadow:inset -8px -8px rgba(0, 0, 0, 1.5);
+    width: fit-content;
+    margin:100px auto; 
+}
+#account{
+    text-align: center;
+    color:white;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+      
+#dara{
+    margin-top: 0;
+    border-bottom: 4px solid rgb(255, 252, 252);
+    padding: 20px;
+    background-color:rgb(252, 0, 155);
+    font-size: 30px;
+    color:white;
+}
+
+
+
+#pa{
+   height: 50px;
+   padding-top: 10px ;
+   padding-left: 160px;
+}
+
+#momo {
+   
+  height: 30px;
+  color: white;
+  border-bottom: 1px solid white;
+  text-align: center;  
+  padding: 0 0 20px 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+    input[type=text], select
+
+ {
+    width: 300px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid rgb(98, 0, 255);
+    border-radius: 10px;
+    box-sizing: border-box;
+ }
+ input[type=submit] {
+    width: 100px;
+    background-color: #3148b1;
+    color: white;
+    padding: 8px 20px;
+    margin: 18px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+ }
+ input[type=submit] :hover{
+    background-color: #06f112;
+    
+ }
