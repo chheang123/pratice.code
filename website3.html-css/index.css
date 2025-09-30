@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+      background: #000;
+     
+       
+    
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+header .navbar{
+    display:flex ;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.navbar .logo{
+    font-size: 4.1rem;
+    font-weight: 600;
+    
+    
+
+}
+.logoo{
+    margin-left: -35%;
+    font-size: 80px;
+    
+    
+}
+
+
+
+
+.navbar .menu-links{
+    display: flex;
+    gap: 90px;
+    font-size: 25px;
+    width: 25px;
+    
+    
+}
+
+.navbar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+
+.navbar .logo span{
+    color:aqua;
+}
+.navbar a:hover{
+    color: aqua;
+}
+p{
+    color: aqua;
+    margin: 20%;
+    font-size: 30px;
+    
+}
+.innfo
+{
+    position: relative;
+    text-align: center;
+  
+}
+
+    
+.info-img
+{
+position: absolute;
+top: -120px;
+left: 50%;
+transform: translateX(-50%);
+width: 150px;
+
+
+
+}
+.imgg{
+    margin: -10px;
+    top: -120px;
+    left: 50%;
+    width: 50%;
+    margin-right: -0%;
+    float: right;
+    
+   
+
+}
+.info h1 span{
+    color: yellow;
+    font-size: 50px;
+    font-family: Cambria;
+    margin: 30px;
+    text-shadow: 1px 4px 4px #ffffff;
+}
+.info h1{
+    color: white;
+    font-size: 25px;
+
+}
+.ft{
+    width: 20%;
+    margin: -0%;
+}
+.food
+{
+   width: 13%;
+   margin-right: 30% auto;
+   box-shadow: -0px 2px 10px white;
+   margin: 8px;
+   float: right;
+   margin: 20px;
+   
+}
+.food {
+   
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+
+
+
+.food{
+    transition: transform 0.5s ease; 
+}
+
+.food:hover {
+    transform: translateY(-30px); 
+.info {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-15px);}
+  60% {transform: translateY(-8px);}
+}
+
+.food:hover {
+  animation: bounce 0.8s;
+}

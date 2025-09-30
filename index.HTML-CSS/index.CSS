@@ -1,27 +1,24 @@
 body
 
 {
-    
       background-image: url(../learn.html-css/img/vestrahorn-mountains-stokksnes-iceland\(2\).jpg);
       margin: 0 auto;
       height: 100vh;
       align-items: center;    
       font-family: Arial, sans-serif;
 }
-
-
-
 .container{
     
     margin: 0 auto;
     display: flex;
     justify-content: center; 
     border-radius: 20px;
-    background-color: rgba(8, 82, 57, 0.603);
+    background-color: black;
     padding: 30px;
-    box-shadow:inset -8px -8px rgba(0, 0, 0, 1.5);
+    box-shadow:inset -5px -5px aqua;
     width: fit-content;
     margin:100px auto; 
+
 }
 #account{
     text-align: center;
@@ -38,13 +35,18 @@ body
     background-color:rgb(252, 0, 155);
     font-size: 30px;
     color:white;
+    
+}
+#you{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
 
 
 #pa{
-   height: 50px;
-   padding-top: 10px ;
+   height: 45px;
    padding-left: 160px;
 }
 
@@ -59,7 +61,7 @@ body
 }
 
 
-    input[type=text], select
+input[type=text], select
 
  {
     width: 300px;
@@ -67,7 +69,6 @@ body
     margin: 10px 0;
     display: inline-block;
     border: 1px solid rgb(98, 0, 255);
-    border-radius: 10px;
     box-sizing: border-box;
  }
  input[type=submit] {
@@ -77,10 +78,12 @@ body
     padding: 8px 20px;
     margin: 18px 0;
     border: none;
-    border-radius: 8px;
     cursor: pointer;
  }
+
  input[type=submit] :hover{
-    background-color: #06f112;
+     background:#053631;
+    color: #f7f7f7;
+    border-color: #053631;
     
  }
