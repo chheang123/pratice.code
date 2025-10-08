@@ -138,7 +138,7 @@ width: 150px;
 }
 
 .food:hover {
-    transform: translateY(-30px); 
+    transform: translateY(-10px); 
 .info {
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }

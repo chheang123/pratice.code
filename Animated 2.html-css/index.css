@@ -12,7 +12,7 @@ body {
     ),
     url(../learn.html-css/img/painting-mountain-lake-with-mountain-background.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: cover; 
   height: 109vh;
   justify-content: center;
 }
