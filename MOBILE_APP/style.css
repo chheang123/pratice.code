@@ -1,139 +1,101 @@
 * {
   margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background: rgb(17, 196, 209);
-  color: rgb(101, 221, 236);
+  background: rgb(101, 221, 236);
+  font-family: Arial, Helvetica, sans-serif;
 }
 .to {
   background: rgb(252, 253, 253);
+  width: 100%;
+  padding: 100px;
 }
 .logo {
-  width: 15%;
-  margin-top: -20%;
+  width: 140px; /* desktop size */
+  display: block;
+  margin: 20px auto;
+  margin-top: 10%;
 }
+@media (max-width: 768px) {
+  .logo {
+    width: 110px; /* phone size */
+    margin-top: 5px;
+  }
+  .cbs {
+    font-size: 42px;
+  }
+  .heder {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+  .heder button {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+  .next {
+    font-size: 18px;
+    width: auto;
+    padding: 10px 22px;
+  }
+
+  .p {
+    margin-top: 20px;
+    padding: 12px;
+  }
+}
+
 .cbs {
-  color: rgb(0, 0, 5);
+  color: red;
+  font-size: 70px;
+  text-shadow: 5px 5px 9px #000000;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .heder {
   text-align: center;
+  margin-top: 50px;
+  font-size: 35px;
+  color: rgb(234, 255, 0);
+  text-shadow: 5px 5px 9px #000000;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.heder button {
+  margin-top: 20px;
+  border: none;
+  background: #0cd6dd;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 1px 1px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
   margin-top: 15%;
-  font-size: 30px;
-  color: rgb(251, 255, 4);
 }
-.p {
-  margin-top: 10%;
-  background: rgb(255, 255, 255);
-  padding: 5px;
+.heder button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 6px yellow;
 }
 
-.next {
-  color: rgb(255, 255, 255);
-  text-align: center;
-  margin-top: 10%;
-  font-size: 20px;
-  border: 0px solid blue;
-  width: 7%;
-  padding: 7px;
-  border-radius: 10px;
-  background: rgb(17, 196, 209);
-  box-shadow: 0px 3px 3px rgb(5, 0, 0);
-}
-.next:hover {
-  box-shadow: 0 4px 4px 0 yellow;
-}
-.img {
-  text-align: right;
-  margin-top: 10%;
-}
-
-.name {
-  background-color: rgb(17, 196, 209);
-  margin-top: 13%;
-  height: 600px;
-  border: 1px solid rgb(255, 255, 255);
-  width: 25%;
-  text-align: center;
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: 0px 4px 4px 1px rgb(0, 0, 0);
-}
-
-.login {
-  background: white;
-  margin: 50px;
-  padding: 10px;
-  margin-bottom: 30px;
-  color: black;
-  border: 0px solid;
-  box-shadow: 0px 4px 4px rgb(0, 0, 0);
-  border-radius: 20px;
-}
-.login:hover {
-  box-shadow: 0 4px 4px 0 yellow;
-}
-
-.email {
-  margin-bottom: -70px;
-  margin: 70px;
-  font-size: 20px;
-  width: 70%;
-  border-radius: 5px;
-}
-.password {
-  margin: -25%;
-  font-size: 20px;
-  width: 70%;
-  border-radius: 5px;
-}
-
-.submit {
-  margin-top: 20%;
-  width: 30%;
-  padding: 10px;
-  border: 0px solid;
-  box-shadow: 0px 4px 4px rgb(0, 0, 0);
-  border-radius: 10px;
-}
-.submit:hover {
-  box-shadow: 0 3px 3px 0 yellow;
-}
-
-.or {
-  margin-top: 35px;
-  color: black;
-}
-.a {
-  width: 8px;
-  background-color: rgb(255, 255, 255);
-  align-items: center;
-  text-align: center;
-  border-radius: 50%;
-  height: 8px;
-  margin: 1px;
-}
-.b {
-  display: flex;
-  width: 50px;
-}
 .photo {
-  width: 80px;
-  border-radius: 70%;
+  width: 60px;
+  border-radius: 50%;
   float: right;
-  margin: 8%;
+  margin: 2%;
 }
 .para {
-  margin: 9%;
+  margin: 3%;
   color: white;
-  font-size: 30px;
+  font-size: 20px;
 }
 .para:hover {
-  box-shadow: 0 3px 3px 0 yellow;
   width: 4%;
   border-radius: 10px;
 }
+
 .back {
   border: 1px solid white;
   background: rgb(69, 43, 186);
@@ -145,11 +107,10 @@ body {
   width: 60px;
   margin: 1%;
 }
-.back span {
-  color: yellow;
-}
+
 .food {
   color: rgb(248, 0, 21);
+  text-shadow: 5px 5px 5px #000000;
   margin: 8%;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
@@ -168,33 +129,38 @@ body {
 .burger {
   width: 15%;
   border: 1px solid white;
-  background: rgb(20, 201, 201);
-  border-radius: 20px;
-  margin: 30px;
+  border-radius: 8px;
+  margin: 10px;
   box-shadow: 0px 2px 0px black;
 }
 .burger:hover {
   box-shadow: 0 8px 8px 0 rgb(24, 14, 16);
 }
 .BGR {
-  width: 50%;
+  width: 40%;
   text-align: center;
-  margin-top: 1%;
+  margin-top: 2%;
 }
 .burger1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  padding: 50px;
-  margin: 10px;
+  padding: 10%;
+  margin: 5%;
+}
+.box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .burger3 {
-  margin: 10px;
+  margin: 20px;
   border: 1px solid white;
-  border-radius: 12px;
-  width: 600px;
-  height: 450px;
+  grid-template-columns: repeat(3, 1fr);
+  background: rgb(45, 55, 157);
+  border-radius: 5px;
+  width: 350px;
+  height: 420px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -206,7 +172,7 @@ body {
   transition: transform 0.5s ease;
 }
 .burger3:hover {
-  box-shadow: 0 2px 2px 2px red;
+  box-shadow: 0 3px 3px 3px red;
 }
 
 .burger2 {
@@ -219,7 +185,7 @@ body {
 }
 .burger2:hover {
   box-shadow: 0 3px 3px 4px rgb(202, 17, 54);
-  transform: translateY(-10px);
+  transform: translateY(-30px);
   .info {
     transition: transform 0, 4s ease, box-shadow 0, 4s ease;
   }
@@ -237,9 +203,8 @@ body {
   }
 }
 .colorburger {
-  color: white;
+  color: rgb(255, 255, 0);
   font-size: 20px;
-  margin: 10px;
 }
 .pb {
   font-size: 15px;
@@ -268,7 +233,19 @@ body {
   color: white;
   font-size: 15px;
   border-radius: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .linkburger:hover {
   box-shadow: 0 4px 4px 0 rgb(238, 4, 43);
+}
+.color3 {
+  background-color: blue;
+}
+.go {
+  color: white;
+  font-size: 15px;
+  margin-left: 5%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
